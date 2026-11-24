@@ -71,7 +71,7 @@ HTML, CSS, JavaScript
 
 ## 11. Public GitHub repo URL
 
-TODO, create the repo first. It will be:
+LIVE 2026-11-24 (9 files, commit f3028c39, verified by Mabel):
 
 ```
 https://github.com/skymiller1509-blip/lecture-flashcards
@@ -79,7 +79,7 @@ https://github.com/skymiller1509-blip/lecture-flashcards
 
 ## 12. Demo URL (working demo, hosted application or test build)
 
-TODO, GitHub Pages after the repo exists. It will be:
+LIVE 2026-11-24 (Pages build finished, index HTTP 200, app.js HTTP 200, verified by Mabel):
 
 ```
 https://skymiller1509-blip.github.io/lecture-flashcards/
