@@ -87,7 +87,11 @@ https://skymiller1509-blip.github.io/lecture-flashcards/
 
 ## 13. Demo video URL
 
-TODO, film 2 to 4 minutes from VIDEO-SCRIPT.md and upload to YouTube.
+LIVE 2026-11-24 (uploaded to YouTube, channel Skymiller26, Unlisted, 1 min 39 s, verified playing):
+
+```
+https://www.youtube.com/shorts/6MN6gAEI6vY
+```
 
 ## 14. Testing instructions or credentials for judges
 
