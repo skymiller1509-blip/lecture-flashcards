@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Lecture-to-Flashcards Tutor</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+  <h1>Lecture-to-Flashcards Tutor</h1>
+  <p class="tagline">Paste a lecture. Get flashcards. Study them. No account, no API key, nothing leaves your browser.</p>
+</header>
+
+<main>
+  <!-- STEP 1: INPUT -->
+  <section id="input-step">
+    <h2>1. Your lecture</h2>
+    <textarea id="lecture-input" rows="10" placeholder="Paste your lecture notes here... (at least 3 sentences works best)"></textarea>
+    <div class="row">
+      <label class="file-label">Upload .txt file
+        <input type="file" id="file-input" accept=".txt,.md" hidden>
+      </label>
+      <button id="sample-btn" type="button">Try the sample lecture</button>
+      <span id="word-count"></span>
+    </div>
+    <div class="row">
+      <label for="card-count">Cards to make:</label>
+      <select id="card-count">
+        <option value="5">5</option>
+        <option value="8" selected>8</option>
+        <option value="12">12</option>
+      </select>
+      <button id="make-btn" type="button" class="primary">Make flashcards</button>
+    </div>
+    <p id="input-error" class="error" hidden></p>
+    <p class="hint">How it works: the app scores every sentence by its key words, picks the most important ones, and turns them into question cards. All of it runs in your browser. No text is uploaded anywhere.</p>
+  </section>
+
+  <!-- STEP 2: STUDY -->
+  <section id="study-step" hidden>
+    <h2>2. Study your cards</h2>
+    <div class="progress">
+      <span id="progress-text">Card 1 of 8</span>
+      <span id="score-text">Known 0 &middot; Unknown 0</span>
+    </div>
+    <div id="card" class="card" tabindex="0" role="button" aria-label="Flashcard. Tap to flip.">
+      <div class="card-type" id="card-type"></div>
+      <div class="card-text" id="card-text"></div>
+      <div class="card-hint" id="card-hint">Tap the card to flip it</div>
+    </div>
+    <div class="row center">
+      <button id="known-btn" type="button" class="known">I know this</button>
+      <button id="unknown-btn" type="button" class="unknown">Not yet</button>
+    </div>
+    <div class="row center">
+      <button id="shuffle-btn" type="button">Shuffle</button>
+      <button id="restart-btn" type="button">Back to lecture</button>
+    </div>
+  </section>
+
+  <!-- STEP 3: RESULTS -->
+  <section id="result-step" hidden>
+    <h2>Done</h2>
+    <p id="result-text"></p>
+    <div class="row center">
+      <button id="retry-unknown-btn" type="button" class="primary">Study the unknowns again</button>
+      <button id="new-btn" type="button">New lecture</button>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <p>Lecture-to-Flashcards Tutor — built for SLAY HACKS 2026. Cards are generated on your device with a simple extractive method (key-word sentence scoring plus fill-in-the-blank). It is not a large language model.</p>
+</footer>
+
+<script src="app.js"></script>
+</body>
+</html>
