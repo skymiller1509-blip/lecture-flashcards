@@ -90,7 +90,7 @@ https://skymiller1509-blip.github.io/lecture-flashcards/
 LIVE 2026-11-24 (uploaded to YouTube, channel Skymiller26, Unlisted, 1 min 39 s, verified playing):
 
 ```
-https://www.youtube.com/shorts/6MN6gAEI6vY
+https://www.youtube.com/watch?v=6MN6gAEI6vY
 ```
 
 ## 14. Testing instructions or credentials for judges
